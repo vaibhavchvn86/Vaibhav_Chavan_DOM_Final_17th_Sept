@@ -1,0 +1,166 @@
+// Define theme colors
+$theme-background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+$theme-text-color: #fff;
+$theme-primary: #ff0000;
+
+// Global styles
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+// Header styles
+header {
+  background: #{$theme-background}; // Use #{} to reference variables
+  color: #{$theme-text-color};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  .profile {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .logout {
+      background-color: #{$theme-primary};
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .menu-toggle {
+    .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+
+      .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #{$theme-text-color};
+        margin: 3px 0;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+// Sidebar styles
+aside.sidebar {
+  background: #{$theme-background}; // Use #{} to reference variables
+  color: #{$theme-text-color};
+  position: fixed;
+  left: -250px; /* Initially hidden */
+  top: 0;
+  height: 100%;
+  width: 250px;
+  overflow-y: auto;
+  transition: 0.3s;
+  z-index: 1;
+
+  ul.menu {
+    list-style-type: none;
+    padding: 20px;
+
+    li {
+      margin-bottom: 20px;
+
+      a {
+        text-decoration: none;
+        color: #{$theme-text-color};
+        font-size: 18px;
+        transition: color 0.3s;
+
+        &:hover {
+          color: lighten(#fff, 10%);
+        }
+      }
+    }
+  }
+
+  &.active {
+    left: 0;
+  }
+}
+
+// Main content styles
+main {
+  padding: 20px;
+  margin-left: 250px; /* Adjust for the sidebar width */
+
+  .menu-section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    h2 {
+      color: #{$theme-primary};
+      margin-bottom: 10px;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .menu-item {
+        flex: calc(50% - 10px); /* Set the width to 50% minus the gap */
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        h3 {
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-size: 14px;
+          color: #555;
+        }
+
+        span {
+          font-size: 16px;
+          font-weight: bold;
+          color: #{$theme-primary};
+        }
+      }
+    }
+  }
+}
+
+// Media queries for responsiveness
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  main {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  aside.sidebar {
+    width: 200px;
+  }
+  main {
+    padding: 10px;
+  }
+}

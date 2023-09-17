@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="../css/reservation.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture">
+            <a class="logout"  style="text-decoration: none" href="SignIn.html">Logout</button>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Reservation</a></li>
+        </ul>
+    </aside>
+    <main class="reservations-container">
+        <section class="reservation-form">
+            <h2>Make a Reservation</h2>
+            <form id="reservation-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                <br>
+                <label for="time">Time:</label>
+                <input type="time" id="time" required>
+                <br>
+                <button type="submit">Check Availability</button>
+            </form>
+            <div id="availability-result"></div>
+        </section>
+        <section class="user-reservations">
+            <h2>Your Reservations</h2>
+            <ul id="reservation-list"></ul>
+        </section>
+    </main>
+    <script src="../Javascript/homepage.js"></script>
+    <script src="../Javascript/reservation.js"></script>
+</body>
+</html>

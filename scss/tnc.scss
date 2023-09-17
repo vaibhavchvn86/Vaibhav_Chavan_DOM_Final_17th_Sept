@@ -1,0 +1,85 @@
+/* Reset some default browser styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); /* Add text shadow for better contrast */
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Main content styles */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Section styles with matching background */
+.tnc-content {
+  background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+  padding: 20px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+  background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Copyright text styles */
+footer p {
+  font-size: 14px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 28px;
+  }
+
+  main {
+      padding: 10px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+
+  footer {
+      padding: 5px;
+  }
+}

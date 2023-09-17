@@ -1,0 +1,100 @@
+/* Define your theme background */
+$theme-background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the header */
+header {
+    background: $theme-background; /* Use the theme background */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Center the content in the container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the user information section */
+.user-info {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .user-details {
+        display: flex;
+        align-items: center;
+
+        .avatar {
+            img {
+                max-width: 100px;
+                border-radius: 50%;
+            }
+        }
+
+        .user-name {
+            margin-left: 20px;
+            h3 {
+                font-size: 20px;
+                color: #333; /* Adjust font color */
+            }
+
+            p {
+                font-size: 16px;
+                color: #666; /* Adjust font color */
+            }
+        }
+    }
+}
+
+/* Style the past reservations section */
+.reservations {
+    h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .reservation-list {
+        /* Style the list of reservations here */
+    }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Adjust container padding and font sizes for smaller screens */
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Center align user details for smaller screens */
+    .user-details {
+        flex-direction: column;
+        align-items: center;
+
+        .user-name {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+}

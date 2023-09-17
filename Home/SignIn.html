@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Hotel</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLR7fj2dK1fRJ06w/Th7rd12X/yR2ilg7b4asjfko" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="rightContainer">
+        <div class="wrapper">
+          <div class="title-text">
+            <div class="title login">Login Form</div>
+            <div class="title signup">Signup Form</div>
+          </div>
+          <div class="form-container">
+            <div class="slide-controls">
+              <input type="radio" name="slide" id="login" checked />
+              <input type="radio" name="slide" id="signup" />
+              <label for="login" class="slide login">Login</label>
+              <label for="signup" class="slide signup">Signup</label>
+              <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+              <form action="#" class="login">
+                <div class="field">
+                  <input
+                    type="text"
+                    class="email-input"
+                    placeholder="Email Address"
+                    required />
+                </div>
+                <div class="field">
+                  <input
+                    type="password"
+                    class="password-input"
+                    placeholder="Password"
+                    required />
+                </div>
+                <div class="pass-link"><a href="#">Forgot password?</a></div>
+                <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Login" />
+                </div>
+                <div class="signup-link">
+                  Not a member? <a href="#">Signup now</a>
+                </div>
+              </form>
+              <form action="#" class="signup">
+                <div class="field">
+                  <input
+                    type="text"
+                    class="email-input"
+                    placeholder="Email Address"
+                    required />
+                </div>
+                <div class="validationTxt">
+                  <span class="errorTxt" id="emailError"></span>
+                </div>
+                <div class="field">
+                  <input
+                    type="password"
+                    class="password-input"
+                    placeholder="Password"
+                    required />
+                </div>
+                <div class="field">
+                  <input
+                    type="password"
+                    class="confirm-password-input"
+                    placeholder="Confirm password"
+                    required />
+                </div>
+                <div class="validationTxt">
+                  <span class="errorTxt" id="passwordError"></span>
+                </div>
+                <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Signup" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="validationTxt">
+          <span class="errorTxt" id="apiError"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="footer-links">
+            <a href="../Home/AboutUs.html">About</a>
+            <a href="../Home/ContactUs.html">Contact Us</a>
+            <a href="../Home/tnc.html">Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../Javascript/login.js"></script>
+  </body>
+</html>

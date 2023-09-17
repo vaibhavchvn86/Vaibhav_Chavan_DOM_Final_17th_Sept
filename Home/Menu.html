@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Menu</title>
+    <link rel="stylesheet" href="../css/menu.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-toggle">
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="profile.jpg" alt="Profile Picture" />
+        <a class="logout"  style="text-decoration: none" href="SignIn.html">Logout</button>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Reservation</a></li>
+      </ul>
+    </aside>
+    <main>
+      <section class="menu-section" id="appetizers-section">
+        <h2>Appetizers</h2>
+        <div class="menu-items" id="appetizers">
+          <!-- Appetizers will be populated here using JavaScript -->
+        </div>
+      </section>
+
+      <section class="menu-section" id="main-course-section">
+        <h2>Main Course</h2>
+        <div class="menu-items" id="main-course">
+          <!-- Main Course items will be populated here using JavaScript -->
+        </div>
+      </section>
+
+      <section class="menu-section" id="desserts-section">
+        <h2>Desserts</h2>
+        <div class="menu-items" id="desserts">
+          <!-- Desserts will be populated here using JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <script src="../Javascript/homepage.js"></script>
+    <script src="../Javascript/menu.js"></script>
+  </body>
+</html>

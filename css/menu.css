@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+header .profile {
+  display: flex;
+  align-items: center;
+}
+header .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+header .profile .logout {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header .menu-toggle .hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+header .menu-toggle .hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  border-radius: 2px;
+}
+
+aside.sidebar {
+  background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+  color: #fff;
+  position: fixed;
+  left: -250px; /* Initially hidden */
+  top: 0;
+  height: 100%;
+  width: 250px;
+  overflow-y: auto;
+  transition: 0.3s;
+  z-index: 1;
+}
+aside.sidebar ul.menu {
+  list-style-type: none;
+  padding: 20px;
+}
+aside.sidebar ul.menu li {
+  margin-bottom: 20px;
+}
+aside.sidebar ul.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+aside.sidebar ul.menu li a:hover {
+  color: white;
+}
+aside.sidebar.active {
+  left: 0;
+}
+
+main {
+  padding: 20px;
+  margin-left: 250px; /* Adjust for the sidebar width */
+}
+main .menu-section {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+main .menu-section h2 {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+main .menu-section .menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+main .menu-section .menu-items .menu-item {
+  flex: calc(50% - 10px); /* Set the width to 50% minus the gap */
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+main .menu-section .menu-items .menu-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+main .menu-section .menu-items .menu-item p {
+  font-size: 14px;
+  color: #555;
+}
+main .menu-section .menu-items .menu-item span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  main {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
+@media (max-width: 576px) {
+  aside.sidebar {
+    width: 200px;
+  }
+  main {
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */

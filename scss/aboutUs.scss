@@ -1,0 +1,225 @@
+$theme-background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+$theme-header-background: #333;
+$theme-header-text: #fff;
+$theme-primary: #007bff;
+$theme-primary-dark: #0056b3;
+$theme-text: #fff;
+$theme-secondary-text: #fff;
+$theme-link-hover: #0059b3;
+$theme-modal-background: rgba(0, 0, 0, 0.7);
+$theme-modal-text: #ddd;
+
+body {
+  font-family: "Arial", sans-serif;
+  background: $theme-background; // Use the gradient background
+  margin: 0;
+  padding: 0;
+  color: $theme-text;
+}
+
+header {
+  background-color: $theme-header-background;
+  color: $theme-header-text;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline;
+      margin-right: 20px;
+
+      a {
+        text-decoration: none;
+        color: $theme-header-text;
+        font-weight: bold;
+        transition: all 0.3s ease;
+
+        &:hover {
+          text-decoration: underline;
+          color: $theme-link-hover;
+        }
+      }
+    }
+  }
+}
+
+.section {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 40px 0;
+  background: $theme-background;
+  margin-bottom: 30px;
+  border-radius: 10px; // Increase border-radius for a more attractive look
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Enhance box-shadow
+  transition: transform 0.2s ease; // Add a subtle hover effect
+
+  &:hover {
+    transform: scale(1.02); // Enlarge the section on hover
+  }
+
+  h2 {
+    font-size: 32px; // Increase font size for headings
+    margin-bottom: 20px;
+    color: $theme-text;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6; // Adjust line height for better readability
+    color: $theme-secondary-text;
+  }
+
+  .view-details-button {
+    background-color: $theme-primary;
+    color: #fff;
+    border: none;
+    padding: 14px 28px; // Slightly reduce padding
+    border-radius: 6px; // Adjust border-radius
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $theme-primary-dark;
+    }
+  }
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; // Match border-radius with section
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Add a shadow to images
+    transition: transform 0.2s ease; // Add a subtle hover effect
+
+    &:hover {
+      transform: scale(1.02); // Enlarge the image on hover
+    }
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $theme-modal-background;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+
+  .modal-content {
+    background-color: $theme-modal-text;
+    padding: 20px;
+    border-radius: 10px; // Match border-radius with sections
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    h2 {
+      font-size: 28px; // Adjust font size for modal headings
+      color: $theme-text;
+      margin-bottom: 20px;
+    }
+
+    .staff-member,
+    .chef-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Add a shadow to images
+        transition: transform 0.2s ease; // Add a subtle hover effect
+
+        &:hover {
+          transform: scale(1.02); // Enlarge the image on hover
+        }
+      }
+
+      h3 {
+        font-size: 20px; // Adjust font size for names
+        color: $theme-text;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 16px; // Adjust font size for descriptions
+        color: $theme-secondary-text;
+        margin: 5px 0;
+      }
+    }
+
+    .close-modal-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 28px; // Increase font size for the close button
+      cursor: pointer;
+      color: $theme-secondary-text;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $theme-text;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .modal-content {
+      padding: 10px;
+
+      h2 {
+        font-size: 24px; // Adjust font size for modal headings
+        margin-bottom: 15px;
+      }
+
+      .staff-member,
+      .chef-member {
+        img {
+          max-width: 80px;
+          height: auto;
+        }
+
+        h3 {
+          font-size: 18px; // Adjust font size for names
+        }
+
+        p {
+          font-size: 14px; // Adjust font size for descriptions
+        }
+      }
+
+      .close-modal-button {
+        top: 5px;
+        right: 5px;
+        font-size: 24px; // Adjust font size for the close button
+      }
+    }
+  }
+}

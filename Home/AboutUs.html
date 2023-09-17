@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/aboutUs.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#history">History</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#staff">Staff</a></li>
+          <li><a href="#chef">Chef</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="history" class="section">
+      <div class="container">
+        <h2>Our History</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          venenatis sapien vel arcu rhoncus, in ullamcorper risus feugiat.
+          Vestibulum euismod elit a lorem laoreet, sit amet bibendum dui
+          efficitur.
+        </p>
+      </div>
+    </section>
+
+    <section id="images" class="section">
+      <div class="container">
+        <h2>Restaurant Images</h2>
+        <div class="image-gallery">
+          <!-- Add your restaurant images here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="staff" class="section">
+      <div class="container">
+        <h2>Our Staff</h2>
+        <p>
+          Meet our dedicated and friendly staff who are committed to providing
+          you with an exceptional dining experience.
+        </p>
+        <button class="view-details-button" data-target="staff-details">
+          View Details
+        </button>
+      </div>
+    </section>
+
+    <section id="chef" class="section">
+      <div class="container">
+        <h2>Meet Our Chef</h2>
+        <p>
+          Get to know our talented chef who crafts mouthwatering dishes that
+          delight our customers' taste buds.
+        </p>
+        <button class="view-details-button" data-target="chef-details">
+          View Details
+        </button>
+      </div>
+    </section>
+
+    <!-- Modals for staff and chef details -->
+    <div id="staff-details" class="modal">
+      <div class="modal-content">
+        <h2>Our Staff</h2>
+        <div class="staff-member">
+          <img src="staff1.jpg" alt="Staff Member 1" />
+          <h3>John Doe</h3>
+          <p>Position: Head Chef</p>
+          <p>Experience: 10 years</p>
+          <p>
+            John is our head chef with a decade of culinary expertise. He is
+            passionate about creating delightful dishes that leave our customers
+            wanting more.
+          </p>
+        </div>
+        <div class="staff-member">
+          <img src="staff2.jpg" alt="Staff Member 2" />
+          <h3>Jane Smith</h3>
+          <p>Position: Waiter</p>
+          <p>Experience: 5 years</p>
+          <p>
+            Jane is one of our dedicated waitstaff members. With 5 years of
+            experience, she ensures that every guest receives exceptional
+            service.
+          </p>
+        </div>
+        <div class="staff-member">
+          <img src="staff3.jpg" alt="Staff Member 3" />
+          <h3>David Johnson</h3>
+          <p>Position: Bartender</p>
+          <p>Experience: 8 years</p>
+          <p>
+            David is our talented bartender who crafts exquisite cocktails. His
+            8 years of experience make him a master of mixology.
+          </p>
+        </div>
+        <button class="close-modal-button">×</button>
+      </div>
+    </div>
+
+    <div id="chef-details" class="modal">
+      <div class="modal-content">
+        <button class="close-modal-button">×</button>
+        <h2>Chef Details</h2>
+        <div class="chef-member">
+          <img src="chef-image.jpg" alt="Chef Name" />
+          <h3>Chef Name</h3>
+          <p>Experience: 10 years</p>
+          <p>Specialty: Italian Cuisine</p>
+          <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../Javascript/aboutUs.js"></script>
+  </body>
+</html>

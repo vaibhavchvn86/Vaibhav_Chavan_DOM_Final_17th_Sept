@@ -66,3 +66,44 @@ fetchAndDisplayMenu(mainCourseURL, "main-course");
 
 // Fetch and display desserts
 fetchAndDisplayMenu(dessertURL, "desserts");
+
+// accordion
+
+// Get all accordion titles (h2 elements)
+const accordionTitles = document.querySelectorAll(".accordion-title");
+
+// Add click event listeners to each accordion title
+accordionTitles.forEach((title) => {
+  title.addEventListener("click", () => {
+    const menuSection = title.parentElement; // Get the parent section
+    const menuItems = menuSection.querySelector(".menu-items"); // Get the menu items container
+    const arrow = title.querySelector(".arrow"); // Get the arrow element
+
+    // Toggle the 'active' class to expand/collapse the section
+    if (menuSection.classList.contains("active")) {
+      menuSection.classList.remove("active");
+      menuItems.style.display = "none";
+      arrow.classList.remove("rotate"); // Remove the 'rotate' class to reset arrow rotation
+    } else {
+      // Close other open sections
+      accordionTitles.forEach((otherTitle) => {
+        const otherMenuSection = otherTitle.parentElement;
+        if (otherMenuSection !== menuSection && otherMenuSection.classList.contains("active")) {
+          otherMenuSection.classList.remove("active");
+          otherMenuSection.querySelector(".menu-items").style.display = "none";
+          otherTitle.querySelector(".arrow").classList.remove("rotate"); // Reset arrow rotation for other sections
+        }
+      });
+
+      menuSection.classList.add("active");
+      menuItems.style.display = "flex";
+      arrow.classList.add("rotate"); // Add the 'rotate' class to rotate the arrow
+    }
+  });
+
+  // Initially close each section on page load
+  const menuSection = title.parentElement;
+  const menuItems = menuSection.querySelector(".menu-items");
+  menuSection.classList.remove("active");
+  menuItems.style.display = "none";
+});

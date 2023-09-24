@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant</title>
-    <link rel="stylesheet" href="../css/home.css" />
-  </head>
-  <body>
-    <header>
-      <div class="menu-toggle">
-        <div class="hamburger-menu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="../css/home.css" />
+</head>
+
+<body>
+  <header>
+    <div class="menu-toggle">
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
-      <div class="profile">
-        <img src="profile.jpg" alt="Profile Picture" />
-        <a class="logout"  style="text-decoration: none" href="SignIn.html">Logout</button>
-      </div>
-    </header>
+      <h2>Home</h2>
+    </div>
+    <div class="profile">
+      <img src="../Images/profile.png" alt="Profile Picture" />
+      <a class="logout" style="text-decoration: none" href="SignIn.html">Logout</button>
+    </div>
     <aside class="sidebar">
       <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Reservation</a></li>
+        <li><a href="#" style="color: chartreuse;">Home</a></li>
+        <li><a href="../Home/Menu.html">Menu</a></li>
+        <li><a href="../Home/Reservation.html">Reservation</a></li>
       </ul>
     </aside>
-    <section class="restaurant-description">
-      <h1>Welcome to Our Restaurant</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor,
-        nunc id aliquam tincidunt, nisl nunc tincidunt nunc, id lacinia nunc
-        nunc id nunc. Sed auctor, nunc id aliquam tincidunt, nisl nunc tincidunt
-        nunc, id lacinia nunc nunc id nunc.
-      </p>
-    </section>
-    <section class="unique-selling-points">
-      <h2>Our Unique Selling Points</h2>
-      <div class="dish-images">
-        <img src="dish1.jpg" alt="Dish 1" />
-        <img src="dish2.jpg" alt="Dish 2" />
-        <img src="dish3.jpg" alt="Dish 3" />
+  </header>
+
+  <section class="restaurant-description">
+    <h1>Welcome to Our Restaurant</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor,
+      nunc id aliquam tincidunt, nisl nunc tincidunt nunc, id lacinia nunc
+      nunc id nunc. Sed auctor, nunc id aliquam tincidunt, nisl nunc tincidunt
+      nunc, id lacinia nunc nunc id nunc.
+    </p>
+  </section>
+  <section class="unique-selling-points">
+    <h2>Our Unique Selling Points</h2>
+    <div class="dish-images">
+      <span>Dahi Puri</span>
+      <img src="../images/dahipuri.jpg" alt="Dish 1" style="width: 100%;"/>
+      <span>Butter Chicken</span>
+      <img src="../images/butterChicken.jpg" alt="Dish 2"  style="width: 100%;"/>
+      <span>Rasgulla</span>
+      <img src="../images/rasgulla.jpg" alt="Dish 3"  style="width: 100%;"/>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="../Home/AboutUs.html">About</a>
+          <a href="../Home/ContactUs.html">Contact Us</a>
+          <a href="../Home/Tnc.html">Terms and Conditions</a>
+        </div>
       </div>
-    </section>
-    <script src="../Javascript/homepage.js"></script>
-  </body>
+    </div>
+  </div>
+
+  <script src="../Javascript/homepage.js"></script>
+</body>
+
 </html>

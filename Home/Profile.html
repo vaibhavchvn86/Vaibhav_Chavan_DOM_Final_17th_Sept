@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Profile</title>
-    <link rel="stylesheet" href="../css/profile.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/profile.css" />
+  </head>
+  <body>
     <header>
-        <h1>User Profile</h1>
+      <h2>
+        <img
+          src="../Images/backbtn.png"
+          alt=""
+          onclick="window.history.back();" />
+        User Profile
+      </h2>
     </header>
     <div class="container">
-        <div class="user-info">
-            <h2>User Information</h2>
-            <div class="user-details">
-                <div class="avatar">
-                    <img src="avatar.jpg" alt="User Avatar">
-                </div>
-                <div class="user-name">
-                    <h3>John Doe</h3>
-                    <p>Email: john@example.com</p>
-                    <p>Phone: (123) 456-7890</p>
-                </div>
-            </div>
+      <div class="user-info">
+        <h2>User Information</h2>
+        <div class="user-details">
+          <div class="avatar">
+            <img src="avatar.jpg" alt="User Avatar" />
+          </div>
+          <div class="user-name">
+            <h3>John Doe</h3>
+            <p>Email: john@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+          </div>
         </div>
-        <div class="reservations">
-            <h2>Past Reservations</h2>
-            <div class="reservation-list">
-                <!-- Reservation items will be populated here using JavaScript -->
-            </div>
+      </div>
+      <div class="reservations">
+        <h2>Past Reservations</h2>
+        <div class="reservation-list">
+          <!-- Reservation items will be populated here using JavaScript -->
         </div>
+      </div>
     </div>
     <script src="../Javascript/profile.js"></script>
-</body>
+  </body>
 </html>

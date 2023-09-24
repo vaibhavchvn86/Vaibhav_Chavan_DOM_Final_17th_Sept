@@ -1,28 +1,6 @@
-$theme-background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
-$theme-header-background: #333;
-$theme-header-text: #fff;
-$theme-primary: #007bff;
-$theme-primary-dark: #0056b3;
-$theme-text: #fff;
-$theme-secondary-text: #fff;
-$theme-link-hover: #0059b3;
-$theme-modal-background: rgba(0, 0, 0, 0.7);
-$theme-modal-text: #ddd;
-
-body {
-  font-family: "Arial", sans-serif;
-  background: $theme-background; // Use the gradient background
-  margin: 0;
-  padding: 0;
-  color: $theme-text;
-}
+@import './style.scss';
 
 header {
-  background-color: $theme-header-background;
-  color: $theme-header-text;
-  padding: 15px 0;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   nav ul {
     list-style: none;
@@ -50,7 +28,7 @@ header {
 
 .section {
   max-width: 60%;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 40px 0;
   background: $theme-background;
   margin-bottom: 30px;

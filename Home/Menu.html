@@ -9,46 +9,60 @@
   <body>
     <header>
       <div class="menu-toggle">
-        <div class="hamburger-menu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
+          <div class="hamburger-menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+          <h2>Hotel Menu</h2>
       </div>
       <div class="profile">
-        <img src="profile.jpg" alt="Profile Picture" />
-        <a class="logout"  style="text-decoration: none" href="SignIn.html">Logout</button>
+          <img src="../Images/profile.png" alt="Profile Picture">
+          <a class="logout" style="text-decoration: none" href="SignIn.html">Logout</button>
       </div>
-    </header>
-    <aside class="sidebar">
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Reservation</a></li>
-      </ul>
-    </aside>
+      <aside class="sidebar">
+          <ul class="menu">
+              <li><a href="../Home/Home.html">Home</a></li>
+              <li><a href="#" style="color: chartreuse;">Menu</a></li>
+              <li><a href="../Home/Reservation.html">Reservation</a></li>
+          </ul>
+      </aside>
+  </header>
+
     <main>
       <section class="menu-section" id="appetizers-section">
-        <h2>Appetizers</h2>
+        <h2 class="accordion-title">Appetizers <span class="arrow">&#9660;</span></h2>
         <div class="menu-items" id="appetizers">
           <!-- Appetizers will be populated here using JavaScript -->
         </div>
       </section>
 
       <section class="menu-section" id="main-course-section">
-        <h2>Main Course</h2>
+        <h2 class="accordion-title">Main Course <span class="arrow">&#9660;</span></h2>
         <div class="menu-items" id="main-course">
           <!-- Main Course items will be populated here using JavaScript -->
         </div>
       </section>
 
       <section class="menu-section" id="desserts-section">
-        <h2>Desserts</h2>
+        <h2 class="accordion-title">Desserts <span class="arrow">&#9660;</span></h2>
         <div class="menu-items" id="desserts">
           <!-- Desserts will be populated here using JavaScript -->
         </div>
       </section>
     </main>
+
+    <div class="footer">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-links">
+                  <a href="../Home/AboutUs.html">About</a>
+                  <a href="../Home/ContactUs.html">Contact Us</a>
+                  <a href="../Home/Tnc.html">Terms and Conditions</a>
+              </div>
+          </div>
+      </div>
+  </div>
 
     <script src="../Javascript/homepage.js"></script>
     <script src="../Javascript/menu.js"></script>
